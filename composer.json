@@ -1,0 +1,38 @@
+{
+    "name": "siteorigin/laravel-imgix",
+    "description": "IMGIX integration for Laravel. It does some cool things.",
+    "keywords": ["laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Greg Priday",
+            "email": "greg@siteorigin.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SiteOrigin\\Imgix\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SiteOrigin\\Imgix\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "imgix/imgix-php": "^3.3"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4",
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SiteOrigin\\Imgix\\ImgixServiceProvider"
+            ]
+        }
+    }
+}
