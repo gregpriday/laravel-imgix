@@ -21,7 +21,9 @@
     },
     "require": {
         "php": ">=7.4",
-        "imgix/imgix-php": "^3.3"
+        "ext-gd": "*",
+        "imgix/imgix-php": "^3.3",
+        "league/color-extractor": "^0.3.2"
     },
     "require-dev": {
         "mockery/mockery": "^1.4",

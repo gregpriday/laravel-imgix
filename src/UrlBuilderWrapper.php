@@ -2,9 +2,6 @@
 
 namespace SiteOrigin\Imgix;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
 use Imgix\UrlBuilder;
 
 class UrlBuilderWrapper
@@ -36,7 +33,6 @@ class UrlBuilderWrapper
             default :
                 return $this->builder->{$name}(...$arguments);
                 break;
-
         }
     }
 }
